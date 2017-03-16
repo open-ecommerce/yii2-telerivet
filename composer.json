@@ -1,0 +1,22 @@
+{
+    "name": "open-ecommerce/yii2-telerivet",
+    "description": "This component is YII2 wrapper for Telerivet PHP module",
+    "type": "library",
+    "keywords": ["yii2","extension","telerivet","sms","voice","virtual number", "programable number"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eduardo Silva",
+            "email": "eduardo@open-ecommerce.org"
+        }
+    ],
+    "require": {
+        "telerivet/telerivet-php-client": "dev-master",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "openecommerce\\yiitelerivet\\": ""
+        }
+    }
+}
