@@ -11,9 +11,9 @@ Either run
 
 ```
 php composer.phar require --prefer-dist open-ecommerce/yii2-Telerivet "master@dev"
-
+```
 or if you have composer installed globaly
-
+```
 composer require --prefer-dist open-ecommerce/yii2-Telerivet "master@dev"
 
 ```
