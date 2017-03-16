@@ -17,14 +17,23 @@ or if you have composer installed globaly
 composer require --prefer-dist open-ecommerce/yii2-Telerivet "master@dev"
 
 ```
-
 or add
-
 ```
 "open-ecommerce/yii2-Telerivet": "master@dev"
 ```
 
 to the require section of your `composer.json` file.
+
+Depending on your minimun composer requirements defined in your composer.json you will need to add the repository:
+
+```
+"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/open-ecommerce/yii2-telerivet"
+        },
+        ...
+```
 
 
 Usage
