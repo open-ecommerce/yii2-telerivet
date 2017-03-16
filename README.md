@@ -10,16 +10,16 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist open-ecommerce/yii2-Telerivet "dev-master"
+php composer.phar require --prefer-dist open-ecommerce/yii2-telerivet "dev-master"
 ```
 or if you have composer installed globaly
 ```
-composer require --prefer-dist open-ecommerce/yii2-Telerivet "dev-master"
+composer require --prefer-dist open-ecommerce/yii2-telerivet "dev-master"
 
 ```
 or add
 ```
-"open-ecommerce/yii2-Telerivet": "dev-master"
+"open-ecommerce/yii2-telerivet": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
