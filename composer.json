@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "telerivet/telerivet-php-client": "*",
         "yiisoft/yii2": "*"
     },
     "autoload": {

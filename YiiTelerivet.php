@@ -3,7 +3,6 @@
 namespace openecommerce\yiitelerivet;
 
 use yii\base\Component;
-use \Services_Telerivet;
 
 /**
  * YiiTelerivet class
@@ -26,12 +25,6 @@ class YiiTelerivet extends Component
 
 
     /**
-	 ** @var string $account_sid -> Telerivet Account ID
-     */
-    public $account_sid;
-
-
-    /**
 	 ** @var string $auth_key -> Telerivet Authorization Key
      */
 
@@ -44,7 +37,7 @@ class YiiTelerivet extends Component
     public function init()
     {
           try {
-                $this->telerivetClass = new Services_Telerivet($this->account_sid, $this->auth_key);
+                $this->telerivetClass = new \telerivet\telerivet-php-client\Telerivet_API($this->auth_key);
           } catch (Exception $e) {
                 throw $e;
           }
