@@ -3,6 +3,10 @@
 namespace openecommerce\yiitelerivet;
 
 use yii\base\Component;
+use Yii;
+
+require_once(Yii::getAlias("@vendor/telerivet/telerivet-php-client/telerivet.php"));
+
 
 /**
  * YiiTelerivet class
@@ -16,6 +20,8 @@ use yii\base\Component;
 class YiiTelerivet extends Component
 {
 
+    
+    
     /**
      * The internal Telerivet object.
      *
@@ -37,7 +43,7 @@ class YiiTelerivet extends Component
     public function init()
     {
           try {
-                $this->telerivetClass = new \telerivet\telerivet-php-client\Telerivet_API($this->auth_key);
+                $this->telerivetClass = new \Telerivet_API($this->auth_key);
           } catch (Exception $e) {
                 throw $e;
           }
